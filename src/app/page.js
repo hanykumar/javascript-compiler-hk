@@ -52,7 +52,7 @@ const Home = () => {
         <div style={{ height: `calc(100vh - 50px)`, width: '50%', overflow: 'auto' }}>
           <MonacoEditorComponent code={code} onChange={handleCodeChange} />
         </div>
-        <div className='p-4' style={{ height: '100%', width: '50%', overflow: 'auto' }}>
+        <div className='p-4' style={{ height: `calc(100vh - 50px)`, width: '50%', overflow: 'auto' }}>
           <button className='bg-green-500 px-3 py-1 rounded' onClick={compileCode}>Execute</button>
           {
             output ?
