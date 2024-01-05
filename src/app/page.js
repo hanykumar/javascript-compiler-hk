@@ -45,8 +45,8 @@ const Home = () => {
 
   return (
     <div className='flex flex-col'>
-      <div style={{ height: '50px' }}>
-        Compiler
+      <div className='flex items-center' style={{ height: '50px' }}>
+        <div className='text-2xl px-5'>JavaScript Compiler by Hany Kumar</div>
       </div>
       <div className='flex h-100'>
         <div style={{ height: `calc(100vh - 50px)`, width: '50%', overflow: 'auto' }}>
