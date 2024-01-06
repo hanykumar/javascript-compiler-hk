@@ -65,12 +65,12 @@ body {
   height: clamp(200px, 100vh, calc(100vh - 80px));
   margin-bottom: 10px;
   min-height: 50vh;
-  width: clamp(500px, 50%, 100%);
+  width: clamp(300px, 50%, 100%);
   overflow: auto;
   border-radius: 10px;
 }
 .output-container {
-  width: clamp(500px, 50%, 100%);
+  width: clamp(300px, 50%, 100%);
 }
 .output {
   overflow: auto;
