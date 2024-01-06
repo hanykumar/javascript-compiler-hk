@@ -1,27 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(51, 51, 51);
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 7px 20px;
+  color: white;
+  margin: 0 10px;
+  width: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(177, 177, 177, 0.856);
+}
+.button:active {
+  background-color: rgba(146, 146, 146, 0.226);
+}
+.button-save {
+  background-color: rgb(104, 160, 96);
+}
+.button-new {
+  background-color: rgb(136, 136, 136);
+}
+.button-execute {
+  background-color: rgb(163, 0, 0);
+}
+.title{
+  font-size: 20px;
+  padding: 10px 0px;
+  /* text-align: center; */
+  color: rgb(180, 180, 180);
+  /* background-color: rgb(75, 75, 75); */
+  border-radius: 10px;
+}
+.output{
+  padding: 10px;
+  color: white;
+  background-color: rgb(75, 75, 75);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.editor-container {
+  display: flex; 
+  justify-content: center; 
+  height: 100%; 
+  margin: 0 10px; 
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.editor {
+  display: flex;
+  height: clamp(200px, 100vh, calc(100vh - 80px));
+  margin-bottom: 10px;
+  min-height: 50vh;
+  width: clamp(500px, 50%, 100%);
+  overflow: auto;
+  border-radius: 10px;
+}
+.output-container {
+  width: clamp(500px, 50%, 100%);
+}
+.output {
+  overflow: auto;
+  height: clamp(200px, 100vh, calc(100vh - 100px));
 }
