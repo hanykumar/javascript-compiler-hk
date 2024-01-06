@@ -122,6 +122,7 @@ const Home = () => {
             height="100%"
             fontSize={14}
             showPrintMargin={true}
+            setFocus={true}
           // editorDidMount={handleEditorDidMount}
           />
         </div>
